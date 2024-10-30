@@ -3,10 +3,10 @@ import MainSection from "./components/MainSection";
 
 function App() {
   return (
-    <div className="flex h-screen">
+    <main className="flex h-screen ">
       <Sidebar />
       <MainSection />
-    </div>
+    </main>
   );
 }
 

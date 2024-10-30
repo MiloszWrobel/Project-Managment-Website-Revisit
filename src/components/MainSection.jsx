@@ -6,13 +6,13 @@ export default function MainSection() {
   const [projectSelected, setProjectSelected] = useState(false);
 
   function handleClick() {
-    setProjectSelected(true);
+    setProjectSelected((prevValue) => !prevValue);
   }
 
   return (
     <>
       {projectSelected ? (
-        <Project />
+        <Project handleClick={handleClick} />
       ) : (
         <NoProjectSelected handleClick={handleClick} />
       )}
