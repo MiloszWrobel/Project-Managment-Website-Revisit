@@ -1,7 +1,9 @@
+import Input from "./Input";
+
 export default function Project({ handleClick }) {
   return (
-    <section className="flex-1 p-8 bg-stone-100 text-stone-700 rounded-lg shadow-md flex flex-col mt-8 w-3/4">
-      <div className="flex w-3/5 mb-4 justify-end">
+    <section className="flex-1 p-8 text-stone-700 rounded-lg shadow-md flex flex-col mt-16 w-[35rem]">
+      <div className="flex w-[35rem] mb-4 justify-end">
         <button
           className="px-4 py-2 mr-2 rounded-md bg-stone-100 text-stone-900"
           onClick={handleClick}
@@ -13,15 +15,9 @@ export default function Project({ handleClick }) {
         </button>
       </div>
       <div className="space-y-4">
-        <h3 className="font-bold">Title</h3>
-        <input className="w-3/5 p-2 border-b-2 rounded-sm border-stone-300 bg-stone-200 text-stone-600 focus:outline-none focus:border-stone-600" />
-        <h3 className="font-bold">Description</h3>
-        <textarea className="w-3/5 p-2 border-b-2 rounded-sm border-stone-300 bg-stone-200 text-stone-600 focus:outline-none focus:border-stone-600" />
-        <h3 className="font-bold">Due Date</h3>
-        <input
-          className="w-3/5 p-2 border-b-2 rounded-sm border-stone-300 bg-stone-200 text-stone-600 focus:outline-none focus:border-stone-600"
-          type="date"
-        />
+        <Input label="Title" />
+        <Input label="Description" textarea />
+        <Input label="Due Date" type="date" />
       </div>
     </section>
   );

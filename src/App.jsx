@@ -3,7 +3,7 @@ import MainSection from "./components/MainSection";
 
 function App() {
   return (
-    <main className="flex h-screen ">
+    <main className="flex h-screen gap-8">
       <Sidebar />
       <MainSection />
     </main>
