@@ -4,7 +4,9 @@ export default function Sidebar() {
       <h2 className="mb-8 font-bold uppercase md:text-xl text-stone-200">
         Your Projects
       </h2>
-      <button> + Add Project</button>
+      <button className="w-auto text-left px-2 py-1 rounded-lg my-1 bg-stone-800 hover:text-stone-200 hover:bg-stone-700">
+        + Add Project
+      </button>
     </aside>
   );
 }
